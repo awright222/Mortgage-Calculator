@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+MainMortgageCalculator.js (Main Front Page)
+Includes:
+
+Down Payment Options (feature #13)
+Taxes and Insurance Calculator (feature #5)
+Core Mortgage Calculator functionality (Mortgage Amount, Term, Rate, Currency).
+ExtraPaymentOptions.js
+Allows users to input additional payments (monthly, annually, or one-time).
+
+AmortizationSchedule.js
+Displays a table or graph showing:
+
+Month-by-month breakdown (Principal, Interest, Remaining Balance).
+Cumulative totals.
+InterestRateSensitivity.js
+Adds a slider to adjust interest rates and dynamically updates the results.
+
+LoanComparisonTool.js
+Enables side-by-side comparisons of multiple loan options.
+
+TaxesInsuranceCalculator.js (if separate from the main page)
+Estimates property taxes, insurance, and escrow payments.
+
+LoanTypes.js
+Allows selection of different loan types:
+
+Fixed-rate, Adjustable-rate, FHA, VA, etc.
+SlideMenuDots.js (Reusable Navigation Component)
+Renders a dot navigation bar for flipping between slides.
