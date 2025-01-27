@@ -18,14 +18,14 @@ export default function ExtraPaymentOptions({
       const extra = parseFloat(e.target.value);
       setExtraPayment(extra);
   
-      // Update mortgage details, e.g., reducing loan term or showing interest savings
+    
       setMortgageDetails((prevDetails) => ({
         ...prevDetails,
         extraPayment: extra,
-        // Adjust calculations based on the extra payment
+       
       }));
 
-      // Adjust the monthly payment and total repayment based on the extra payment
+     
       const newMonthlyPayment = monthlyPayment - extra;
       const newTotalRepayment = totalRepayment - (extra * 12 * termLength);
 

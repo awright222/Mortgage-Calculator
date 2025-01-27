@@ -8,8 +8,7 @@ const LoanTypes = ({ setLoanType, setMortgageDetails }) => {
     setSelectedLoanType(loanType);
     setLoanType(loanType);
 
-    // Update mortgage details based on loan type (optional)
-    // For example, you could adjust the interest rate or terms for different loan types
+
     if (loanType === 'Fixed-Rate') {
       setMortgageDetails({ interestRate: 4.0 });
     } else if (loanType === 'Adjustable-Rate') {

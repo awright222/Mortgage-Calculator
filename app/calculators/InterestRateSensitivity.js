@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const calculateMortgage = (amount, term, rate) => {
-  // Your mortgage calculation logic here
+
   return (amount * rate) / (1 - Math.pow(1 + rate, -term));
 };
 

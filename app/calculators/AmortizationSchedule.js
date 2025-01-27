@@ -20,7 +20,6 @@ export default function AmortizationSchedule({ loanAmount, interestRate, termLen
         remainingBalance: Math.max(remainingBalance, 0),
       });
 
-      // Prevent negative remaining balance due to floating-point precision issues
       if (remainingBalance <= 0) break;
     }
 
@@ -31,15 +30,15 @@ export default function AmortizationSchedule({ loanAmount, interestRate, termLen
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Amortization Schedule</h1>
-      <div className="overflow-y-auto max-h-96">
-        <table className="table-auto w-full border-collapse border border-gray-300 text-sm">
+      <h1 className="text-2xl font-bold mb-4 text-[#023047]">Amortization Schedule</h1>
+      <div className="overflow-y-auto max-h-96 border-4 border-[#FFB703] rounded-lg p-2">
+        <table className="table-auto w-full border-collapse text-sm">
           <thead>
-            <tr className="bg-gray-200">
-              <th className="border border-gray-300 px-2 py-1 text-black">Month</th>
-              <th className="border border-gray-300 px-2 py-1 text-black">Principal</th>
-              <th className="border border-gray-300 px-2 py-1 text-black">Interest</th>
-              <th className="border border-gray-300 px-2 py-1 text-black">Remaining Balance</th>
+            <tr className="bg-[#023047] text-white">
+              <th className="border border-gray-300 px-2 py-1">Month</th>
+              <th className="border border-gray-300 px-2 py-1">Principal</th>
+              <th className="border border-gray-300 px-2 py-1">Interest</th>
+              <th className="border border-gray-300 px-2 py-1">Remaining Balance</th>
             </tr>
           </thead>
           <tbody>

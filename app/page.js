@@ -4,7 +4,6 @@ import { useState } from 'react';
 import MainMortgageCalculator from './calculators/MainMortgageCalculator.js';
 import TaxesInsuranceCalculator from './calculators/TaxesInsuranceCalculator.js';
 import AmortizationSchedule from './calculators/AmortizationSchedule.js';
-import SlideMenuDots from './calculators/SlideMenuDots.js';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -76,15 +75,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-12"> {/* Increased padding */}
-      <div className="w-full max-w-6xl mb-8"> {/* Increased width */}
+    <div className="flex flex-col items-center min-h-screen p-12">
+      <div className="w-full max-w-6xl mb-8">
         {slides[currentSlide]}
       </div>
-      <SlideMenuDots
-        totalSlides={slides.length}
-        currentSlide={currentSlide}
-        setCurrentSlide={setCurrentSlide}
-      />
     </div>
   );
 }
