@@ -2,11 +2,8 @@
 
 import { useState } from 'react';
 import MainMortgageCalculator from './calculators/MainMortgageCalculator.js';
-import ExtraPaymentOptions from './calculators/ExtraPaymentOptions.js';
+import TaxesInsuranceCalculator from './calculators/TaxesInsuranceCalculator.js';
 import AmortizationSchedule from './calculators/AmortizationSchedule.js';
-import InterestRateSensitivity from './calculators/InterestRateSensitivity.js';
-//import LoanComparisonTool from './calculators/LoanComparisonTool.js';
-import LoanTypes from './calculators/LoanTypes.js';
 import SlideMenuDots from './calculators/SlideMenuDots.js';
 
 export default function Home() {
@@ -62,33 +59,27 @@ export default function Home() {
       currentSlide={currentSlide}
       setCurrentSlide={setCurrentSlide}
     />,
-    <ExtraPaymentOptions
-      loanAmount={loanAmount}
-      downPayment={downPayment}
-      setLoanAmount={setLoanAmount}
-      setDownPayment={setDownPayment}
+    <TaxesInsuranceCalculator
       setMortgageDetails={setMortgageDetails}
       monthlyPayment={monthlyPayment}
       setMonthlyPayment={setMonthlyPayment}
       totalRepayment={totalRepayment}
       setTotalRepayment={setTotalRepayment}
+      termLength={termLength}
     />,
-    <AmortizationSchedule mortgageDetails={mortgageDetails} />,
-    <InterestRateSensitivity
-      mortgageAmount={loanAmount}
-      loanTerm={termLength}
+    <AmortizationSchedule
+      loanAmount={loanAmount - downPayment}
       interestRate={interestRate}
-      setInterestRate={setInterestRate}
+      termLength={termLength}
       monthlyPayment={monthlyPayment}
-      setMonthlyPayment={setMonthlyPayment}
     />,
-    //<LoanComparisonTool mortgageDetails={mortgageDetails} />,
-    <LoanTypes mortgageDetails={mortgageDetails} />,
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen">
-      <div className="w-full max-w-4xl">{slides[currentSlide]}</div>
+    <div className="flex flex-col items-center min-h-screen p-12"> {/* Increased padding */}
+      <div className="w-full max-w-6xl mb-8"> {/* Increased width */}
+        {slides[currentSlide]}
+      </div>
       <SlideMenuDots
         totalSlides={slides.length}
         currentSlide={currentSlide}

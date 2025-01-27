@@ -20,10 +20,10 @@ const InterestRateSensitivity = ({
   };
 
   return (
-    <div>
-      <h2>Interest Rate Sensitivity</h2>
+    <div className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Interest Rate Sensitivity</h2>
       <div>
-        <label htmlFor="interestRate">Interest Rate: </label>
+        <label htmlFor="interestRate" className="block text-black font-medium mb-1">Interest Rate: </label>
         <input
           type="range"
           id="interestRate"
@@ -32,12 +32,13 @@ const InterestRateSensitivity = ({
           step="0.1"
           value={interestRate}
           onChange={handleInterestRateChange}
+          className="w-full"
         />
       </div>
 
-      <div className="results">
-        <h3>Monthly Payment: ${monthlyPayment.toFixed(2)}</h3>
-        <p>This is your new monthly payment based on the adjusted interest rate.</p>
+      <div className="results mt-4">
+        <h3 className="text-xl font-semibold">Monthly Payment: ${monthlyPayment.toFixed(2)}</h3>
+        <p className="text-black">This is your new monthly payment based on the adjusted interest rate.</p>
       </div>
     </div>
   );
