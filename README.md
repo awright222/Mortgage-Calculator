@@ -61,4 +61,4 @@ Estimates property taxes, insurance, and escrow payments.
 Renders a dot navigation bar for flipping between slides.
 
 # Find Me!
-[Portfolio](https://www.alexwrightportfolio.com/)  | [Project](https://mortgage-calculator-beige-nine.vercel.app/)  | [LinkedIn](www.linkedin.com/in/alexgwright2)  | [http://i.imgur.com/0o48UoR.png](https://github.com/awright222)
+[Portfolio](https://www.alexwrightportfolio.com/)  | [Project](https://mortgage-calculator-beige-nine.vercel.app/)  | [LinkedIn](www.linkedin.com/in/alexgwright2)  | [GitHub](https://github.com/awright222)
