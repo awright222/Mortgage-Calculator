@@ -35,6 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+![Mortgage Calculator](mortgage_calculator.png)
+
 
 MainMortgageCalculator.js (Main Front Page)
 Includes:
@@ -53,15 +55,10 @@ Cumulative totals.
 InterestRateSensitivity.js
 Adds a slider to adjust interest rates and dynamically updates the results.
 
-LoanComparisonTool.js
-Enables side-by-side comparisons of multiple loan options.
-
 TaxesInsuranceCalculator.js (if separate from the main page)
 Estimates property taxes, insurance, and escrow payments.
 
-LoanTypes.js
-Allows selection of different loan types:
-
-Fixed-rate, Adjustable-rate, FHA, VA, etc.
-SlideMenuDots.js (Reusable Navigation Component)
 Renders a dot navigation bar for flipping between slides.
+
+# Find Me!
+Alex: [Portfolio](https://www.alexwrightportfolio.com/)  | [Project](https://mortgage-calculator-beige-nine.vercel.app/)  | [LinkedIn](www.linkedin.com/in/alexgwright2)
